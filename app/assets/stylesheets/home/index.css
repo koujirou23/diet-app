@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.sign-up {
+  font-size: 20px;
+}
+
+.login {
+  padding: 0 90px;
+  font-size: 20px;
+}
+
+.home-image {
+  width: 100vw;
+  height: 85vh;
+  opacity: 0.8;
+}
