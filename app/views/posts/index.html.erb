@@ -3,15 +3,15 @@
 <div class='main'>
   <%# 投稿一覧 %>
   <div class='post-contents'>
-    <ul class='item-lists'>
+    <ul class='post-lists'>
       <% @posts.each do |post| %>
-       <li class='list'>
-          <%= link_to item_path(item.id), method: :get do  %>
-            <div class='item-img-content'>
-              <%= image_tag item.image, class: 'item-img' if item.image.attached? %>
+       <li class='post'>
+          <%= link_to post_path(post.id), method: :get do  %>
+            <div class='post-img-content'>
+              <%= image_tag post.image, class: 'post-img' if post.image.attached? %>
             </div>
-            <div class='item-info'>
-              <h3 class='item-name'>
+            <div class='post-info'>
+              <h3 class='post-name'>
                 <%= post.name %>
               </h3>
             </div>
