@@ -1,1 +1,25 @@
 <%= render "shared/header"%>
+
+<div class='main'>
+  <%# 投稿一覧 %>
+  <div class='post-contents'>
+    <ul class='post-lists'>
+      <% @posts.each do |post| %>
+       <li class='post'>
+          <%= link_to post_path(post.id), method: :get do  %>
+            <div class='post-img-content'>
+              <%= image_tag post.image, class: 'post-img' if post.image.attached? %>
+            </div>
+            <div class='post-info'>
+              <h3 class='post-name'>
+                <%= post.name %>
+              </h3>
+            </div>
+          <% end %>
+       </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<%= render "shared/footer"%>
