@@ -1,0 +1,13 @@
+  
+<div class="home">  
+  <div class='home-logo'>
+    <%= link_to image_tag("apllication-logo.png")%>
+  </div>
+  <div class="list">
+    <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+    <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+  </div>
+</div>
+  <div class="home-images">
+    <%= link_to image_tag("home.png", class:"home-image") %>
+  </div>
