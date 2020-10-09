@@ -1,6 +1,11 @@
 .home {
   display: flex;
   justify-content: space-between;
+  background-color: #FFDAB9;
+}
+
+.home-logo {
+  padding-top: 5px;
 }
 
 .list {
